@@ -3,9 +3,10 @@ mongoose.connect('mongodb://localhost/test');
 const schema={
     name:String,
     age:Number,
+    health:String,
     health:String
 }
-const Mydata= mongoose.model('Cat', schema);
+const Mydata= mongoose.model('cats', schema);
 
 // const kitty = new Mydata({ name1: 'Zildjian' });
 // kitty.save().then(() => console.log('meow'));
